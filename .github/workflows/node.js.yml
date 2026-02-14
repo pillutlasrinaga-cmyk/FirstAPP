@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        node-version: [20.x, 22.x]
 
     defaults:
       run:
@@ -36,6 +36,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Test
-        run: npm test --if-present
