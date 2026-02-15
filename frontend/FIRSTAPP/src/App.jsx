@@ -16,10 +16,9 @@ import Dashboard from "./components/Dashboard/DashboardPage";
 import Quizzes from "./components/pages/Quizzes";
 import QuizDetail from "./components/pages/QuizDetail";
 import Profile from "./components/pages/Profile";
-import Flashcardlistpage from "./components/pages/Flashcards/Flashcardlistpage";
 
 const App = () => {
-  const isAuthenticated =false; // Change to false to test login redirect
+  const isAuthenticated = false; // Change to false to test login redirect
   const loading = false; // Must be false to render routes
 
   if (loading) {
