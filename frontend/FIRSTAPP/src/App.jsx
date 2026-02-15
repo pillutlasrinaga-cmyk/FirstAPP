@@ -19,8 +19,6 @@ import QuizResultPage from "./components/pages/quizzes/QuizResultPage";
 import QuizTakePage from "./components/pages/quizzes/QuizTakePage";
 
 // Protected route wrapper
-import ProtectedRoute from "./components/common/ProtectedRoute"; // adjust if needed
-
 const App = () => {
   const isAuthenticated = false; // Change to true once backend is ready
   const loading = false;
@@ -53,7 +51,6 @@ const App = () => {
         <Route path="/register" element={<RegisterPage />} />
 
         {/* Protected routes */}
-        <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
           <Route path="/dashboard" element={<DashboardPage />} />  {/* ✅ fixed */}
           <Route path="/documents" element={<DocumentListPage />} />
           <Route path="/documents/:id" element={<DocumentDetailPage />} />
@@ -62,9 +59,9 @@ const App = () => {
           <Route path="/quizzes" element={<QuizResultPage />} />
           <Route path="/quizzes/:id" element={<QuizTakePage />} />
           <Route path="/profile" element={<ProfilePage />} />
-        </Route>
 
         {/* Catch-all */}
+        tch-all route
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
