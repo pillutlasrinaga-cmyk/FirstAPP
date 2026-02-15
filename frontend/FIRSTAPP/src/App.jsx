@@ -1,6 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import LoginPages from "./pages/LoginPages";
+import RegisterPage from "./pages/RegisterPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import { Navigate } from "react-router-dom";
 const APP = () => {
   const isAuthenticated = false; // Replace with actual authentication logic
   const loading = false; // Replace with actual loading state
