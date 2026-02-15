@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import LoginPages from "./components/pages/auth/LoginPages";
 import RegisterPage from "./components/pages/auth/RegisterPage";
 import NotFoundPage from "./components/pages/auth/NotFoundPage";
-import DocumentDetail from "./components/pages/DocumentDetail";
+import DocumentDetailPage from "./components/pages/DocumentDetailPage";
 import Flashcards from "./components/pages/FlashcardPages";
 import Flashcardlistpage from "./components/pages/Flashcards/Flashcardlistpage";
 import ProtectedRoute from "./components/pages/ProtectedAuth";
