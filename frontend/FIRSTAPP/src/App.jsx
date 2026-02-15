@@ -7,7 +7,7 @@ import RegisterPage from "./components/pages/auth/RegisterPage";
 import NotFoundPage from "./components/pages/auth/NotFoundPage";
 
 // Protected pages
-import DashboardPages from "./components/pages/Dashboard";
+import DashboardPage from "./components/Dashboard/DashboardPage"; 
 import Documents from "./components/pages/Documents";
 import DocumentDetail from "./components/pages/DocumentDetail";
 import Flashcards from "./components/pages/Flashcards";
