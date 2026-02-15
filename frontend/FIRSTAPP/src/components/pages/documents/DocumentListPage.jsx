@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Documentdetails = () => {
+const DocumentListPage = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Documentdetails = () => {
   )
 }
 
-export default Documentdetails
+export default DocumentListPage
