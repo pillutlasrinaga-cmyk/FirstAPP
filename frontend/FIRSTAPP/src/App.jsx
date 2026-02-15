@@ -6,8 +6,10 @@ import LoginPages from "./components/pages/auth/LoginPages";
 import RegisterPage from "./components/pages/auth/RegisterPage";
 import NotFoundPage from "./components/pages/auth/NotFoundPage";
 
+// Dashboard
+import DashboardPage from "./components/pages/Dashboard/DashboardPage";
+
 // Protected pages
-import Dashboard from "./components/pages/Dashboard/DashboardPage";
 import DocumentDetailPage from "./components/pages/documents/DocumentDetail";
 import DocumentListPage from "./components/pages/documents/DocumentListPage";
 import FlashCardPages from "./components/pages/Flashcards/FlashCardPages";
@@ -15,7 +17,9 @@ import Flashcardlistpage from "./components/pages/Flashcards/Flashcardlistpage";
 import ProfilePage from "./components/pages/Profile/ProfilePage";
 import QuizResultPage from "./components/pages/quizzes/QuizResultPage";
 import QuizTakePage from "./components/pages/quizzes/QuizTakePage";
-import ProtectedRoute from "./components/pages/ProtectedAuth";
+
+// Protected route wrapper
+import ProtectedRoute from "./components/common/ProtectedRoute"; // adjust if needed
 
 const App = () => {
   const isAuthenticated = false; // Change to true once backend is ready
@@ -50,7 +54,7 @@ const App = () => {
 
         {/* Protected routes */}
         <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<DashboardPage />} />  {/* ✅ fixed */}
           <Route path="/documents" element={<DocumentListPage />} />
           <Route path="/documents/:id" element={<DocumentDetailPage />} />
           <Route path="/flashcards" element={<Flashcardlistpage />} />
