@@ -1,12 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import LoginPages from "./pages/LoginPages";
 import RegisterPage from "./pages/RegisterPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import { Navigate } from "react-router-dom";
-const APP = () => {
-  const isAuthenticated = false; // Replace with actual authentication logic
-  const loading = false; // Replace with actual loading state
+
+const App = () => {
+  const isAuthenticated = false;
+  const loading = false;
 
   if (loading) {
     return (
@@ -15,6 +20,7 @@ const APP = () => {
       </div>
     );
   }
+
   return (
     <Router>
       <Routes>
@@ -29,12 +35,11 @@ const APP = () => {
           }
         />
         <Route path="/login" element={<LoginPages />} />
-        <Route path="/RegisterPage" element={<RegisterPage />} />
-
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
   );
 };
 
-export default APP;
+export default App;
