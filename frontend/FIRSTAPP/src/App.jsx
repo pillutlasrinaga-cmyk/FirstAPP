@@ -5,9 +5,9 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import LoginPages from "./pages/LoginPages";
-import RegisterPage from "./pages/RegisterPage";
-import NotFoundPage from "./pages/NotFoundPage";
+import LoginPages from "./components/pages/auth/LoginPages";
+import RegisterPage from "./components/pages/auth/RegisterPage";
+import NotFoundPage from "./components/pages/auth/NotFoundPage";
 
 const App = () => {
   const isAuthenticated = false;
